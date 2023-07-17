@@ -1,0 +1,51 @@
+// #4dd8fb, #10516a 
+
+.button {
+    display: inline-block;
+    height: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #B0DCF8;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 60px;
+    color:#000;
+
+    border-radius: 50px;
+    border:none;
+    transition: 0.2s;
+
+
+    &:hover, :focus{
+        background-color: #64bef5;
+    }
+    
+   &:active {
+        outline: none;
+        background-color: #22a1f0;
+    }
+
+/* Tablet Big */
+@media (max-width: 1199px) {
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+}
+
+.button--white{
+    background-color: #EFF7FC;
+
+    &:hover,:focus {
+        background-color: #D1EDFF;
+    }
+    
+   &:active {
+    background-color: #B0DCF8;
+    }
+}
+
+

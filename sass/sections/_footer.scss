@@ -1,0 +1,45 @@
+.footer {
+    padding-top: 40px;
+    padding-bottom: 50px;
+    background-color: #333;
+    color: #fff;
+
+    text-align: left;
+
+    
+/* Tablet Big */
+@media (max-width: 1199px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+}
+
+.footer__copyright{
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.footer__copyright p {
+    margin-bottom: 10px;
+
+/* Tablet */
+@media (max-width: 899px) {
+    margin-bottom: 15px;
+    }
+}
+
+.footer__copyright p+p{
+    color: #B0B0B0;
+    line-height: 1.5;
+    
+/* Tablet Big */
+@media (max-width: 1199px) {
+    font-size: 14px;
+}
+}
+
+.footer__copyright-link{
+    color: #fff;
+    text-decoration: underline;
+}

@@ -1,0 +1,146 @@
+.timeline {
+    padding-top: 70px;
+    padding-bottom: 30px;
+
+    
+/* Tablet Big */
+@media (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+/* Tablet */
+@media (max-width: 899px) {
+    padding-top: 40px;
+    padding-bottom: 0px;
+}
+}
+
+.timeline-wrapper {
+    width: 850px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Tablet */
+@media (max-width: 899px) {
+    width: 100%;
+    max-width: 350px;
+}
+}
+
+.timeline-item {
+    width: 50%;
+    padding-bottom: 50px;
+    position: relative;
+
+
+    /* Tablet */
+    @media (max-width: 899px) {
+        width: 100%;
+    }
+
+    &:before, &:after{
+        content: "";
+        position: absolute;
+    }
+
+    &:before{
+        width: 4px;
+        top: 0;
+        bottom: 0;
+        background-color: #E1EEF4;
+    }
+
+    &:after{
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        border: 4px solid #E1EEF4;
+        top: 0;
+        background: #FFF;
+    }
+}
+
+.timeline-item p {
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 1.4;
+
+    /* Tablet Big */
+@media (max-width: 1199px) {
+    font-size: 14px;
+    margin-top: 7px;
+    }
+}
+
+.timeline-item strong {
+
+    /* Tablet Big */
+@media (max-width: 1199px) {
+    font-size: 14px;
+}
+}
+
+.timeline-item:last-child::before {
+    display: none;
+}
+
+// нечетные
+.timeline-item:nth-child(odd){
+    padding-right: 56px;
+    text-align: right;
+
+    @media (max-width:899px) {
+        text-align:left;
+        padding-left: 44px;
+        padding-right: 0;
+    }
+}
+
+.timeline-item:nth-child(odd):before{
+    right: -2px;
+
+    @media (max-width:899px) {
+        right: auto;
+        left: 15px;
+    }
+}
+
+.timeline-item:nth-child(odd):after{
+    right: -17px;
+
+    @media (max-width:899px) {
+        right: auto;
+        left: 0;
+     }
+}
+// нечетные
+
+// четные
+.timeline-item:nth-child(even){
+    margin-left: auto;
+    padding-left: 56px;
+
+    @media (max-width:899px) {
+        margin-left: 0;
+        padding-left: 44px;
+    }
+}
+
+.timeline-item:nth-child(even):before{
+    left: -2px;
+
+    @media (max-width:899px) {
+        left: 15px;
+     }
+}
+
+.timeline-item:nth-child(even):after{
+    left: -17px;
+
+    @media (max-width:899px) {
+        left: 0;
+     }
+}
+// четные

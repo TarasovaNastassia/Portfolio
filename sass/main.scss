@@ -1,0 +1,25 @@
+// Base
+@import "./base/vars";
+@import "./base/reset";
+@import "./base/base";
+
+//Media
+@import "./media/media";
+
+// Blocks
+@import "./blocks/title";
+@import "./blocks/skills-social";
+@import "./blocks/button";
+@import "./blocks/link";
+@import "./blocks/mix-block";
+@import "./blocks/form";
+@import "./blocks/nav-icon";
+
+//Section
+@import "./sections/header";
+@import "./sections/skills";
+@import "./sections/portfolio";
+@import "./sections/hw";
+@import "./sections/contacts";
+@import "./sections/footer";
+
